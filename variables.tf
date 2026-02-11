@@ -13,8 +13,8 @@ EOT
   type = map(object({
     name                  = string
     resource_group_name   = string
-    ingestion_access_mode = optional(string, "Open")
-    query_access_mode     = optional(string, "Open")
+    ingestion_access_mode = optional(string) # Default: "Open"
+    query_access_mode     = optional(string) # Default: "Open"
     tags                  = optional(map(string))
   }))
 }
