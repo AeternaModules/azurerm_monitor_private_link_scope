@@ -13,8 +13,8 @@ EOT
   type = map(object({
     name                  = string
     resource_group_name   = string
-    ingestion_access_mode = optional(string) # Default: "Open"
-    query_access_mode     = optional(string) # Default: "Open"
+    ingestion_access_mode = optional(string)
+    query_access_mode     = optional(string)
     tags                  = optional(map(string))
   }))
   # --- Unconfirmed validation candidates, derived from azurerm_monitor_private_link_scope's provider source ---
